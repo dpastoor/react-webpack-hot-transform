@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import Counter from './Components/Counter.js';
 import _ from 'lodash';
-import './css/styles.css';
 export default class App extends React.Component {
   constructor(props) {
     super(props);

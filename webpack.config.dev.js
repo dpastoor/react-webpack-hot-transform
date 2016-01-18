@@ -2,8 +2,9 @@ var path = require('path');
 var webpack = require('webpack');
 
 module.exports = {
-  devtool: 'eval',
+  devtool: 'cheap-module-eval-source-map',
   entry: [
+    'eventsource-polyfill', // necessary for hot reloading with IE
     'webpack-hot-middleware/client',
     './src/index'
   ],
@@ -18,15 +19,14 @@ module.exports = {
   ],
   module: {
     loaders: [{
-      test: /\.jsx?$/,
+      test: /\.jsx?/,
       loaders: ['babel'],
-      exclude: /node_modules/,
       include: path.join(__dirname, 'src')
     },
-     {
-      test: /\.css$/,
-      exclude: /node_modules/,
-      loader: 'style!css'
-    }]
+    {
+     test: /\.css$/,
+     exclude: /node_modules/,
+     loader: 'style!css'
+   }]
   }
 };
