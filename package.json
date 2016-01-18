@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gaearon/react-transform-boilerplate.git"
+    "url": "https://github.com/gaearon/react-webpack-hot-transform.git"
   },
   "keywords": [
     "react",
@@ -29,9 +29,9 @@
   "author": "Devin Pastoor",
   "license": "CC0-1.0",
   "bugs": {
-    "url": "https://github.com/gaearon/react-transform-boilerplate/issues"
+    "url": "https://github.com/dpastoor/react-webpack-hot-transform/issues"
   },
-  "homepage": "https://github.com/gaearon/react-transform-boilerplate",
+  "homepage": "https://github.com/dpastoor/react-webpack-hot-transform",
   "devDependencies": {
     "babel-core": "^5.4.7",
     "babel-eslint": "^3.1.9",
@@ -51,8 +51,8 @@
     "webpack-hot-middleware": "^2.0.0"
   },
   "dependencies": {
-    "react": "^0.14.0",
-    "react-dom": "^0.14.0",
-    "react-tap-event-plugin": "^0.2.1"
+    "lodash": "^4.0.0",
+    "react": "latest",
+    "react-dom": "latest"
   }
 }
